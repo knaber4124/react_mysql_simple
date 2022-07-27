@@ -9,7 +9,7 @@ const AddItem = () => {
     };
 
     const [item, setItem] = useState(initialItemState);
-    const [submitted, setSubmitted] = useState(fale);
+    const [submitted, setSubmitted] = useState(false);
     const handleInputChange = event => {
         const { name, value } = event.target;
         setItem({ ...item, [name]: value });
